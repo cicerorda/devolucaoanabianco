@@ -1,6 +1,5 @@
 {
   "name": "DevolucaoValoresAnaBianco",
-  "projectId": "85bbee33-89a5-4f68-aa02-f393b7e3be6f",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -22,7 +21,6 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
-    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
