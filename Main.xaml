@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,22531" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,24320" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="94">
       <x:String>System.Activities</x:String>
@@ -119,7 +119,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1138,21066" sap2010:WorkflowViewState.IdRef="Sequence_16">
+  <Sequence sap:VirtualizedContainerService.HintSize="1138,20375" sap2010:WorkflowViewState.IdRef="Sequence_16">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="x:Boolean" Name="login" />
@@ -279,13 +279,13 @@
         </ui:BrowserScope.Body>
       </ui:BrowserScope>
     </Sequence>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[extractdatatable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1076,19487" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[extractdatatable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1076,18796" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1042,19362" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1042,18671" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -300,7 +300,7 @@
               </Assign.Value>
             </Assign>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="980,101" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Chamado: &quot;+Chamado]" />
-            <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="980,18989" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="980,18298" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="versao" />
                 <Variable x:TypeArguments="x:String" Name="NomeAssociado" />
@@ -1456,215 +1456,45 @@
               <ui:BuildDataTable DataTable="[dt_dadosLog]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="918,69" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Grupo&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Cota&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Versao&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Tipo_x0020_Conta&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Banco&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Chamado&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
               <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[new Object() {grupo, cota, versao, TipoConta, Banco, Chamado}]" DataTable="[dt_dadosLog]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="918,195" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
               <ui:AppendCsvFile DataTable="[dt_dadosLog]" Delimitator="Semicolon" DisplayName="Append to CSV" FilePath="[&quot;\\nas01\consorcio\publico\Administradora de Consórcios\Controles Internos\IV - Estrutura Operacional\Área Técnica\Área Técnica-OPERACIONAL\Assembleias\Programações do Robô\Log jira &quot;+now.ToString(&quot;ddMMyyyy&quot;)+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="918,142" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
-              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="918,578" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3">
-                <ui:RetryScope.ActivityBody>
-                  <ActivityAction>
-                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="400,394" sap2010:WorkflowViewState.IdRef="Sequence_106">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: [CATEN-4710] credito fundo de reserva - Sicredi - JIRA" sap:VirtualizedContainerService.HintSize="918,1134" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="460ccbce-a8fe-4695-8ef7-425f766036d0" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,908" sap2010:WorkflowViewState.IdRef="Sequence_108">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_60" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
-                        <ui:Click.CursorPosition>
-                          <ui:CursorPosition Position="Center">
-                            <ui:CursorPosition.OffsetX>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetX>
-                            <ui:CursorPosition.OffsetY>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetY>
-                          </ui:CursorPosition>
-                        </ui:Click.CursorPosition>
-                        <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e3cce65e-5ac5-4c9b-8333-54b32cda26d4" InformativeScreenshot="8e1dd75d0823eff6edcec7883d4c8f71" Selector="&lt;html app='msedge.exe' url='https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4486' /&gt;&lt;webctrl id='opsbar-transitions_more' tag='A' aaname='Aberto' /&gt;" TimeoutMS="10000">
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
-                        </ui:Click.Target>
-                      </ui:Click>
-                      <ui:Click DelayMS="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="5000" DisplayName="Click 'A  menu_2'" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_61" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
-                        <ui:Click.CursorPosition>
-                          <ui:CursorPosition Position="Center">
-                            <ui:CursorPosition.OffsetX>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetX>
-                            <ui:CursorPosition.OffsetY>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetY>
-                          </ui:CursorPosition>
-                        </ui:Click.CursorPosition>
-                        <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d50a6094-46ad-4567-a1e1-792dd9b8d2bb" InformativeScreenshot="6ffd9ad7d333cc142c67d4b0bb0c1934" Selector="&lt;html app='msedge.exe' url='https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4486' /&gt;&lt;webctrl aria-role='menuitem' parentid='action_id_41' tag='A' aaname='Iniciar atendimentoAlterar status paraEm Atendimento' /&gt;" TimeoutMS="10000" WaitForReady="NONE" />
-                        </ui:Click.Target>
-                      </ui:Click>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Aberto'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_44" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="460ccbce-a8fe-4695-8ef7-425f766036d0" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4710" DesignTimeRectangle="470, 235, 72, 27" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Aberto'" FullSelectorArgument="&lt;webctrl id='opsbar-transitions_more' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='opsbar-transitions_more' tag='A' type='' class='aui-button aui-dropdown2-trigger opsbar-transitions__status-category_new' aaname='Aberto' check:innerText='Aberto' /&gt;" Guid="35859f69-1cb4-4d75-a83b-f30655279ded" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAfCAYAAABNjStyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN9SURBVGhD7ZlPaxpBGMb7LfwM4sVTTrmkl9CDiEJCYaGEJId48RIhUHrIXipEQggIQlAIHpJAKwQkBz3oISIlKMKCQfAQ88fSNibNN3j6zs6Mrro2u8YeSuaBh7jzzqwzv3nfmYBvoORKCphLDQG7f/iNu+4PXF13lcm33Z8mE6v6wFjAbpByFz0LtD4wlVmTzdhI9YHZdVQeWEoBc2gpBcyhpRQwh5ZSwBxaSgFzaKl/Aiz/MQDPh2PUbGL/q6VeAOwSh2sExreMeGk4NlNgzTLiaxriBZuYa3dgtMfbW+3OWNuopaYHdpFF0LeJjUgI84nzodhMgTWOseQLQJ8BsEJiGR5/FMlKW7S1UU5F4bXZ9FFLTQ2smlqBN3YGI6/D69eRs+wcB5ZFLvsJ7/z0eW4d0RNjMP7iK6LhEGVnAP6wjgOxgFo6Sm064vsR+BmkLxwW68e9gzwbT1mXjKybfTz+ZQRjxyjbZM6oW5UsNDYfE5ohYAXgpblWnxkvNSWwc8QXQojlWSpbP/O4CcwfwmrqHLWmgYI5MQ27FYo3T7FBMY1iRpt2eJ8gCeAcGMXSdfEuKqFSxoQWy7VhNMX3LbJFZlBoUNvFKWLsOXIKoz+/yW5VMhya2AT2HiewpaYDVtiBd2EPBfFsprplwiawQAZV8Xx1XUSMJreUNlDLMkAiU5jNkguZJSczzJqtYyXJvtu3Qhky6GOcbNG4LRw1B21/c6u0hyBB84ZpDQ5gMUtNAayDXIyX07A3cSgmPH6GlaFTHwbMjI2N5UA4MAtM5hFgvM/n4T4E0eOL4qBhaXvOlN0tu/YJlnIPjJUUHZJ6npWIdBH6QgDBFC8lE8p7OhfkmPYZorRoLXvJF2zJTqudAJucYSOZOWNLuQZmZDeHS0o4/5GyLswh8SzS6NypE8w6jmIajRElI0owuF1ElcFufMNh+szMRltg5gbRZuyzM4+12Z9hb7fLrjLGraVcAqsjGSYYdDuOTq6V02mx/HrmJZnEQYLfZN75KHZL8ion6IUkVhdFWc9pWCUY7H22wOjqz4v3sI0yM7NRNP83k7eklig6OvBfYqnpDv1XaCkFzKGlFDCHllLAHFpKAXNoqT6wW/Wr0UTf3Nn8atR7eMJVx37Aa3Xnhv/tPT4JShZgTPe9R9wSzdGBr9V333/hnhLJqiFgSs9LAXMl4A/t3vn4kxKaBAAAAABJRU5ErkJggg==" InformativeScreenshot="48e82f7e9e93460091cf504762a1d307.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='[CATEN-4710] credito fundo de reserva - Sicredi - JIRA' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Iniciar atendimentoAlte…'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_45" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="460ccbce-a8fe-4695-8ef7-425f766036d0" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4710" DesignTimeRectangle="469, 120, 342, 29" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Iniciar atendimentoAlte…'" FullSelectorArgument="&lt;webctrl aria-role='menuitem' parentid='action_id_41' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' parentid='action_id_41' tag='A' type='' class='' aaname='Iniciar atendimentoAlterar status paraEm Atendimento' check:innerText='Iniciar atendimento&amp;#xA;Alterar status para&amp;#xA;EM ATENDIMENTO' /&gt;" Guid="d454723c-61a0-4172-83a3-e390896904ca" ImageBase64="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" InformativeScreenshot="43d07ccb7d080fd91d8d4c25396992f7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='[CATEN-4710] credito fundo de reserva - Sicredi - JIRA' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Em Atendimento'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_46" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="460ccbce-a8fe-4695-8ef7-425f766036d0" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4710" DesignTimeRectangle="470, 212, 129, 27" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Em Atendimento'" FullSelectorArgument="&lt;webctrl id='opsbar-transitions_more' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='opsbar-transitions_more' tag='A' type='' class='aui-button  aui-dropdown2-trigger opsbar-transitions__status-category_indeterminate' aaname='Em Atendimento' check:innerText='Em Atendimento' /&gt;" Guid="9bfd4fed-47e3-40d1-9bf5-a481470c339a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIUAAAAfCAYAAADJJw4ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR6SURBVHhe7Vu/TxtZECZ/iYvkav4ESsqT0rgkSpSskgYpDRVNmqSxInGXQApEQeHqREEBFRQpoIhAsi8CczLrw4WBCBwFW8YgazLz5r3d8e4a4mU5nWA+6ZP8fs2+nfnevNnCI6BQRKCiUMTQJ4onf/jw8GUZRh5/Ud4DUqyfffBt9EMEonj2oQYPEhYq7zYp5s8/1qwKGIEofnulGeK+kmIvEYgiabLy/lBCRaE0lFBRKA0lVBRKQwkVhdJQQkWhNJRQUTw+gPUWOqD+zbQn1s5gp3wM47F5d5sSKUTxDXbsmgCtHzCZOHdYlmB2n002tqr9Y4vfodG6gPV50ZcJ+0Xxfr8H0D2D97F5t8UqLOxfQsc+/2b8CuPvdiEX6R99swejkb4oJVKLolk5hHyhykzYSCpOn4APPWicYmBOv8OEHFvr4FMvb10U/z2ze35+6wIN9cDfrNl4lMDbPAfyXOyQRSiRXhTlg9jYQh0HWm1YQeUz6GRX8fS79iVsr+7F1jmO4QvQKZ1aPMMX6cHGoh0zghCwmWkUs4fftX3dc1hfZtuTZXoetrfYIcZRWweBcMdX29A0/QCdozb4Iij8Dmw/yc7OWhUmB9gdfj9WEAI7a2jLQ59VLuxcRCu0dSVn8FCZ57MwnCBoL8WZhPmCEtmLwmyoDvnFJp56RqNyDN7cMWyTAyjokXVMH1ZOMUiVeuQ3jr3egzwJBkW1sWwz0wxeJ9jTRNsT01VM++z44rQLAo95hTosHVHrHJZwbMSu6xw1YQqz3JRz3EBRWDtu/wheG9qlZzq7w+2nBGPvDmGD7KJNyrrjr0t8hdG7rtawj+ZT+wJWrgksMTeHfnfCJKAgluZKiXMlJbKpKRIcGrTR5Qset9k52LbjfZz/gac3fPEJkwrb4d0euT48Z8va5vV80tzJLLoxsZbXWYEY2/3pOylTODvcDveQ+8xCDe0Ov5/49cH+7VQato0ssOCuuwIcc/M4n4TRRX/OXy8IokQ2NcWbr2YsURSifZUopip0GuLYXrUvFREFCy6OMAjiOfb6obHonq4XRWgn2S7vKe1+YqKwYvI/y2AOzs4Didn1d8xEiWMJlLiFmiKNKA5hG0caZbx2nNAwba7jFQJHJzBGcyKiYFttmHWnT/CqIPCYOLUZiSLtfobJFP7mbtiXMSWyyRSFf2AMnZFWFDks/GTAHXk+38sjyzSHHFPjE2BPVLN+YmqD/FwDVspN8IJ1A4KAdqjVMetqpqAzuKEoUu8HP0mpfoIuCqpAn44Daoourg+uvOwpkU1NYR2TThS7UKTCCwvQt339yL/oK4TuUh8rcjxR5DwC2vTQeXn6igiKqp4RKmWVq4NQEl8PVAQ3uYC8qShS7we/hrDt9mP6vBoU65dBH7Q6UPyFYvEmlEghCuVdpISKQmkooaJQGkqoKJSGEioKpaFEIIqcd7vVrfL/y9yLklUBIxDFi1n938d9JMX85ad/rQoYgSgIT//04dGrvxMXK+8eKdbRPwIR+kShUBBUFIoIAH4CO1IJ6DcYUc4AAAAASUVORK5CYII=" InformativeScreenshot="349c0d88c18eb9632bca0ed7536e83aa.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='[CATEN-4710] credito fundo de reserva - Sicredi - JIRA' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'ConcluirAlterar status'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="460ccbce-a8fe-4695-8ef7-425f766036d0" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4710" DesignTimeRectangle="469, 267, 325, 29" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'ConcluirAlterar status'" FullSelectorArgument="&lt;webctrl aria-role='menuitem' parentid='action_id_161' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' parentid='action_id_161' tag='A' type='' class='' aaname='ConcluirAlterar status paraConcluídoThis status is managed internally by JIRA Software' check:innerText='Concluir&amp;#xA;Alterar status para&amp;#xA;CONCLUÍDO&amp;#xA;This status is managed internally by JIRA Software' /&gt;" Guid="5c0b956f-afe4-45af-b020-5a3d175b3f0d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUkAAAAhCAYAAABUWlkrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARRSURBVHhe7ZzPSxtBFMdz7qV/To8Fry0UvNlTaQ89CAq9eCi9FEFaqWfBg0V7kvaSXoRAxX+gomKFCi1SRG1jYjS/jNHpvpk3s7ObyRo3SXfTfD/wIPvmxyZr/PBmNknm+vpaNBoN0Ww2BQAAAEWpVJKRubq6EvV6XZAsAQAAKIwkqYKsVmucBgAAQBhJXl42RaVS5TQAAADCSPLioiHOyxVOAwAAIIwk6/ULUTo75zQAAADCSLLmSbJ4esZpAAAAhJFktVYXhWKJ0wAAAAgjyUq1Jk4Kp5wGAABABCSZP4EkQXr4UTwWD1beijuzT0Rm5vFQBb1meu10DUCyGEmWK1Xx56TI6fRxuDotRuY3+SiC45wYH50WWby3Bp77H147BZLq2DqQz313y9EWI+gagGSxJFmLJUkpr9EJE+OrR9zSWzqWJPhvuDv3zCmO9Ma62PWed68ESUHXACRLQJK/8wVOd8KRyE55YpzKiUPOEBvzC2KDH/cSSHJAKXwTX77+EnE+XOaSRqojtyQmXfkuAyRLbEl2Iq2Neb/CHBn15anH+u3h5fGmmDPjJsTcdvB89DhQsdISW8taLrf5XPw4S2O9ecC/Z295Sl77Me9vd1tRuoRBMblf5h4KXbkt5jkhKYu1HI/J7Qi5Rqrt+BKTy2JHH01+3eTsylCdu3Wc7ON4bFPcXzLzZGaWxFrgW8AHYtG0BQMkS0xJqiqS5NUOKTW7ytxeMMeyjeVHBPsqQZq5PdFlu5Jk/7YAQCfwiiOGKF3CaJFUm3zg2BKWEZUtSW4PSszPdyNJM5b3KvU5lNB9MYaP7QDJ0oUko26OkOjC7f4YW3gSW2wkU7uNiS9Jv4IF/WN/9Y0Ye/7SHU9fSElKUX76ySNuJiwLvecnqzxHPig5K6eFlbfEaEmyraB6KUkv5HmomnW0ufrrAMnSp0qSJNkqJ1peh5fOCr9/iwAZSDLd7H3uUJLL33nEzYRloUXSruJzSTK8bDaiMpLkZa+9FNfhEFfXkiQZc1Vpt+n+La/NC5AsMSXpEp3NLSvJkCRd80KSg0ovl9uuirFd3lFJSilxvubLzogzMKcXDtG128tsEWPLWEvGrnldOQ6QLLElqcTmvflDQtN3t+VNGbPP6BHek2wjSSW26D1Jey7zTwhJppJe37hR1ZglqUDeXzK79iS1gFQbwe2h/UITETLTfdVcfF67f3hsoHpsrV7Dz98OkCxdSJLwqwQd9hI8cHfbEmakJAkWpRrrqj7t83rt215/SDKd9OEjQEooPlpEwXybak/Ooe8sW31YYgZrme6jJOZLVmHmdUjSxj8/Be5uDwpdShKA/uESxjAGSBZIEqSWe+9fOaUxTIGvJSYPJAlSC/24w8OV2aH9gYtHH9/hBy5SACQJAAARQJIAABABJAkAABFAkgAAEAEkCQAAEUCSAAAQASQJAAARQJIAABABJAkAABFAkgAAEIGSZEn8BX1YFOdGvqogAAAAAElFTkSuQmCC" InformativeScreenshot="f198380a15177a144239b2fce8467450.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='[CATEN-4710] credito fundo de reserva - Sicredi - JIRA' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
                     </Sequence>
                   </ActivityAction>
-                </ui:RetryScope.ActivityBody>
-                <ui:RetryScope.Condition>
-                  <ActivityFunc x:TypeArguments="x:Boolean" />
-                </ui:RetryScope.Condition>
-              </ui:RetryScope>
-              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="918,814" sap2010:WorkflowViewState.IdRef="RetryScope_5" NumberOfRetries="3">
-                <ui:RetryScope.ActivityBody>
-                  <ActivityAction>
-                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="400,550" sap2010:WorkflowViewState.IdRef="Sequence_107">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_31" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
-                        <ui:Click.CursorPosition>
-                          <ui:CursorPosition Position="Center">
-                            <ui:CursorPosition.OffsetX>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetX>
-                            <ui:CursorPosition.OffsetY>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetY>
-                          </ui:CursorPosition>
-                        </ui:Click.CursorPosition>
-                        <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e3cce65e-5ac5-4c9b-8333-54b32cda26d4" InformativeScreenshot="8e1dd75d0823eff6edcec7883d4c8f71" Selector="&lt;html app='msedge.exe' url='https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4486' /&gt;&lt;webctrl id='opsbar-transitions_more' tag='A' aaname='Aberto' /&gt;" TimeoutMS="10000">
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
-                        </ui:Click.Target>
-                      </ui:Click>
-                      <ui:Click DelayMS="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="5000" DisplayName="Click 'A  menu_2'" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_47" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
-                        <ui:Click.CursorPosition>
-                          <ui:CursorPosition Position="Center">
-                            <ui:CursorPosition.OffsetX>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetX>
-                            <ui:CursorPosition.OffsetY>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetY>
-                          </ui:CursorPosition>
-                        </ui:Click.CursorPosition>
-                        <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d50a6094-46ad-4567-a1e1-792dd9b8d2bb" InformativeScreenshot="6ffd9ad7d333cc142c67d4b0bb0c1934" Selector="&lt;html app='msedge.exe' url='https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4486' /&gt;&lt;webctrl aria-role='menuitem' parentid='action_id_41' tag='A' aaname='Iniciar atendimentoAlterar status paraEm Atendimento' /&gt;" TimeoutMS="10000" WaitForReady="NONE" />
-                        </ui:Click.Target>
-                      </ui:Click>
-                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_59" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
-                        <ui:Click.CursorPosition>
-                          <ui:CursorPosition Position="Center">
-                            <ui:CursorPosition.OffsetX>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetX>
-                            <ui:CursorPosition.OffsetY>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetY>
-                          </ui:CursorPosition>
-                        </ui:Click.CursorPosition>
-                        <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e3cce65e-5ac5-4c9b-8333-54b32cda26d4" InformativeScreenshot="ca236ae16e1b3b7bb2456193f5e9b891" Selector="&lt;html app='msedge.exe' url='https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4486' /&gt;&lt;webctrl id='opsbar-transitions_more' tag='A' aaname='Em Atendimento' /&gt;">
-                            <ui:Target.TimeoutMS>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:Target.TimeoutMS>
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
-                        </ui:Click.Target>
-                      </ui:Click>
-                    </Sequence>
-                  </ActivityAction>
-                </ui:RetryScope.ActivityBody>
-                <ui:RetryScope.Condition>
-                  <ActivityFunc x:TypeArguments="x:Boolean" />
-                </ui:RetryScope.Condition>
-              </ui:RetryScope>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="918,353" sap2010:WorkflowViewState.IdRef="TryCatch_11">
-                <TryCatch.Try>
-                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="Click_32" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
-                    <ui:Click.CursorPosition>
-                      <ui:CursorPosition Position="Center">
-                        <ui:CursorPosition.OffsetX>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:CursorPosition.OffsetX>
-                        <ui:CursorPosition.OffsetY>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:CursorPosition.OffsetY>
-                      </ui:CursorPosition>
-                    </ui:Click.CursorPosition>
-                    <ui:Click.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e3cce65e-5ac5-4c9b-8333-54b32cda26d4" InformativeScreenshot="4b6c407ae5b13a56c41233824c34658e" Selector="&lt;html app='msedge.exe' url='https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-4486' /&gt;&lt;webctrl aria-role='menuitem' parentid='action_id_161' tag='A' aaname='ConcluirAlterar status paraConcluídoThis status is managed internally by JIRA Software' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:Click.Target>
-                  </ui:Click>
-                </TryCatch.Try>
-                <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_11">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ActivityAction x:TypeArguments="s:Exception">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                      </ActivityAction.Argument>
-                      <Sequence sap:VirtualizedContainerService.HintSize="496,588" sap2010:WorkflowViewState.IdRef="Sequence_48">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe [CATEN-226]'" sap:VirtualizedContainerService.HintSize="434,394" sap2010:WorkflowViewState.IdRef="BrowserScope_9" InformativeScreenshot="4b1637e73e163116dde58e0dd5887fe0" Selector="&lt;html app='msedge.exe' url='https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-*' /&gt;">
-                          <ui:BrowserScope.Body>
-                            <ActivityAction x:TypeArguments="x:Object">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                              </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,238" sap2010:WorkflowViewState.IdRef="Sequence_47">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  https://teams.sicred...'" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_49" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
-                                  <ui:Click.CursorPosition>
-                                    <ui:CursorPosition Position="Center">
-                                      <ui:CursorPosition.OffsetX>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:CursorPosition.OffsetX>
-                                      <ui:CursorPosition.OffsetY>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:CursorPosition.OffsetY>
-                                    </ui:CursorPosition>
-                                  </ui:Click.CursorPosition>
-                                  <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="68ccb210-98b7-4bad-b150-0120ee68f047" InformativeScreenshot="ef3283503b8772a7c80b5ef3387d9e72" Selector="&lt;webctrl aaname='Retornar para fila' parentid='stalker' tag='A' /&gt;">
-                                      <ui:Target.TimeoutMS>
-                                        <InArgument x:TypeArguments="x:Int32" />
-                                      </ui:Target.TimeoutMS>
-                                      <ui:Target.WaitForReady>
-                                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                                      </ui:Target.WaitForReady>
-                                    </ui:Target>
-                                  </ui:Click.Target>
-                                </ui:Click>
-                              </Sequence>
-                            </ActivityAction>
-                          </ui:BrowserScope.Body>
-                        </ui:BrowserScope>
-                        <ui:Continue sap:VirtualizedContainerService.HintSize="434,32" sap2010:WorkflowViewState.IdRef="Continue_6" />
-                      </Sequence>
-                    </ActivityAction>
-                  </Catch>
-                </TryCatch.Catches>
-              </TryCatch>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="380f672fc4680d84d8aff415d97ce75e.jpg" Selector="&lt;html app='msedge.exe' title='[CATEN-*' /&gt;" Title="[CATEN-4710] credito fundo de reserva - Sicredi - JIRA" Url="https://teams.sicredi.io/projects/CATEN/queues/custom/1912/CATEN-*" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
               <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="918,96" sap2010:WorkflowViewState.IdRef="Click_36" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
